@@ -19,7 +19,7 @@ EOF
 chmod +x deploy/new-reveal-js-presentation.sh
 
 mkdir deploy/presentation-template/
-for file in reveal.js/{css,js,lib,node_modules,plugin,Gruntfile.js}; do
+for file in reveal.js/{css,js,lib,node_modules,plugin,Gruntfile.js,package.json}; do
     ln -s "$(realpath "${file}")" deploy/presentation-template/
 done
 cp reveal.js/index.html deploy/presentation-template/
