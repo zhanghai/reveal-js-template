@@ -24,4 +24,5 @@ for file in reveal.js/{css,js,lib,node_modules,plugin,Gruntfile.js,package.json}
 done
 cp reveal.js/index.html deploy/presentation-template/
 patch deploy/presentation-template/index.html index.html.patch
+mkdir deploy/presentation-template/custom/
 cp deploy/reveal-js-mark-status.sh deploy/presentation-template/
